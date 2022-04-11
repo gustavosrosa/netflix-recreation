@@ -1,0 +1,167 @@
+/* Variáveis */
+:root {
+    --vermelho: #E50914;
+    --preta: #141414;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Elementos padrão */
+
+body {
+    background: var(--preta);
+    font-family: 'Times New Roman', Times, serif;
+    color: #fff;
+}
+
+header .logo {
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times, serif;
+    font-size: 2rem;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 1rem;
+}
+
+/* Se passar o mouse */
+header nav a:hover {
+    color: #ffffff;
+}
+
+header .container {
+    display: flex; /* Coloca itens em linha por padrão */
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Filme principal */
+
+.filme-principal {
+    font-size: 1.1rem;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url(../img/capa_soa.jpg);
+    height: 25rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao {
+    margin-top: 0.625rem;
+    margin-bottom: 5.625rem;
+}
+
+.titulo {
+    font-size: 2.5rem;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    margin-top: 15%;
+}
+
+.botao {
+    background-color: rgba(0, 0, 0, .50);
+    border: none;
+    color: #ffffff;
+    padding: 0.938rem 1.875rem;
+    margin-right: 0.938rem;
+    font-size: 0.75rem;
+
+    cursor: pointer;
+}
+
+.botao:hover {
+    background-color: #fff;
+    color: #000;
+    transition: .3s ease all;
+}
+
+.container {
+    margin-left: 1.25rem;
+}
+
+.filme-principal .container {
+    max-width: 60%;
+}
+
+.box-filme {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrossel-filmes {
+    display: block;
+    margin-top: 0.313rem;
+}
+
+img {
+    width: 250px!important;
+    height: 350px!important;
+    }
+
+.categoria {
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    display: flex;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+}
+
+.botao a {
+    background-color: rgba(0, 0, 0, .50);
+    border: none;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 0.75rem;
+
+    cursor: pointer;
+}
+
+.botao-inicio {
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, .50);
+    border: none;
+    color: #ffffff;
+    padding: 0.938rem 1.875rem;
+    margin-right: 0.938rem;
+    font-size: 0.75rem;
+
+    cursor: pointer;
+}
+
+.botao-inicio:hover {
+    background-color: #fff;
+    color: #000;
+    transition: .3s ease all;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 43.75rem) {
+    body {
+        align-items: center;
+    }
+    header .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .botao {
+        margin-top: 0.313rem;
+        max-width: 11.875rem;
+    }
+}
+
+@media screen and (min-width: 62.5rem) {
+    .descricao {
+        max-width: 50%;
+    }
+}
